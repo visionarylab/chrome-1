@@ -30,5 +30,7 @@ RUN apt-key add /tmp/linux_signing_key.pub \
 VOLUME ["/home/chrome"]
 
 EXPOSE 5900
+EXPOSE 6903
+EXPOSE 6904
 
 CMD ["/usr/bin/supervisord", "-c", "/etc/supervisor/conf.d/supervisord.conf"]
